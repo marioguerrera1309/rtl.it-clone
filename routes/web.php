@@ -1,0 +1,51 @@
+<?php
+use Illuminate\Support\Facades\Route;
+Route::get('registration', 'App\Http\Controllers\LoginController@registration');
+Route::post('registration', 'App\Http\Controllers\LoginController@do_registration');
+Route::get('login', 'App\Http\Controllers\LoginController@login');
+Route::get('/', 'App\Http\Controllers\LoginController@login');
+Route::post('/', 'App\Http\Controllers\LoginController@do_login');
+Route::post('login', 'App\Http\Controllers\LoginController@do_login');
+Route::get('home', 'App\Http\Controllers\HomeController@home');
+Route::get('profilo', 'App\Http\Controllers\HomeController@profilo');
+Route::get('logout', 'App\Http\Controllers\HomeController@logout');
+Route::get('modifiche', 'App\Http\Controllers\HomeController@modifiche');
+Route::get('cerca', 'App\Http\Controllers\HomeController@cerca');
+Route::get('eventi_contest', function() {
+    $email=Session::get('email');
+    if($email=="aguerrera96@gmail.com") {
+        return view('admin_eventi_contest');
+    } else if(Session::has('email')) {
+        return view('eventi_contest');
+    } else return redirect('login');
+});
+Route::get('musica', 'App\Http\Controllers\HomeController@musica');
+Route::get('passwordDimenticata', 'App\Http\Controllers\loginController@passwordDimenticata');
+Route::get('musica_php', 'App\Http\Controllers\MusicaController@musica');
+Route::get('preferiti', 'App\Http\Controllers\MusicaController@preferiti');
+Route::post('aggiungiPreferiti', 'App\Http\Controllers\MusicaController@aggiungiPreferiti');
+Route::post('rimuoviPreferiti', 'App\Http\Controllers\MusicaController@rimuoviPreferiti');
+Route::get('eventi_contest_php', 'App\Http\Controllers\EventiContestController@eventi_contest_php');
+Route::get('eventi_contest_partecipazioni', 'App\Http\Controllers\EventiContestController@eventi_contest_partecipazioni');
+Route::post('eliminaPartecipazioneEvento', 'App\Http\Controllers\EventiContestController@eliminaPartecipazioneEvento');
+Route::post('eliminaPartecipazioneContest', 'App\Http\Controllers\EventiContestController@eliminaPartecipazioneContest');
+Route::get('contest', 'App\Http\Controllers\EventiContestController@contest');
+Route::get('evento', 'App\Http\Controllers\EventiContestController@evento');
+Route::post('salvaEvento', 'App\Http\Controllers\EventiContestController@salvaEvento');
+Route::post('salvaRisposte', 'App\Http\Controllers\EventiContestController@salvaRisposte');
+Route::get('nytimes', 'App\Http\Controllers\ApiController@NyTimes');
+Route::get('gnews', 'App\Http\Controllers\ApiController@Gnews');
+Route::get('informazioni_personali', 'App\Http\Controllers\ModificheController@informazioni_personali');
+Route::post('datiUtente', 'App\Http\Controllers\ModificheController@datiUtente');
+Route::get('dati', 'App\Http\Controllers\ModificheController@dati');
+Route::post('upload_img', 'App\Http\Controllers\ModificheController@upload_img');
+Route::get('delete', 'App\Http\Controllers\ModificheController@delete');
+Route::post('aggiungiEventoDb', 'App\Http\Controllers\EventiContestController@aggiungiEventoDb');
+Route::post('aggiungiContestDb', 'App\Http\Controllers\EventiContestController@aggiungiContestDb');
+Route::post('eliminaEvento', 'App\Http\Controllers\EventiContestController@eliminaEvento');
+Route::post('eliminaContest', 'App\Http\Controllers\EventiContestController@eliminaContest');
+Route::get('contatti', 'App\Http\Controllers\ModificheController@contatti');
+Route::get('compila', 'App\Http\Controllers\ModificheController@compila');
+Route::post('contattiUtente', 'App\Http\Controllers\ModificheController@contattiUtente');
+Route::get('password', 'App\Http\Controllers\ModificheController@password');
+Route::post('aggiornaPassword', 'App\Http\Controllers\ModificheController@aggiornaPassword');
