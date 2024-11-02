@@ -1,0 +1,79 @@
+.login div div div img {
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+    border-radius: 100%;
+}
+.login div div {
+    align-items: center;
+}
+#foto_profilo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+}
+#rtlnav2 img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+#rtlnav2 {
+    background-color: #302e30;
+}
+.navMenu button img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.login div div h2 {
+    color: white;
+    font-size: 20px;
+}
+.pulsanti a button {
+    background-color: red;
+}
+.login2 div div .pulsanti {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;   
+}
+.login2 div div .pulsanti a button {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.login2 div div .pulsanti a button img {
+    margin-bottom: 1px;
+}
+#disconnetti {
+    background-color: black;
+    color: white;
+}
+.login2 div div .pulsanti a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.login2 div div .pulsanti a .black {
+    background-color: black;
+}
+.botInput {
+    background-color: black;
+    color: white;
+    border: 0px;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.botInput[type="submit"] {
+    background-color: red;
+    color: white;
+    font-weight: 1000;
+    width: 30%;
+    height: 150px;
+    margin-bottom: 20px;
+}

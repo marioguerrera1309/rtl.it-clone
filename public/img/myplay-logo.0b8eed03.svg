@@ -1,0 +1,12 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400; height:80px;" xml:space="preserve">
+    <style type="text/css">
+        .myplay-white-st0{fill:#FF0000;}
+        .myplay-white-st2{fill:#1C1C1C;}
+    </style>
+    <g>
+        <path class="myplay-white-st0" d="M386.45,200c0,106.72-86.51,193.23-193.23,193.23C86.51,393.23,0,306.72,0,200 C0,93.28,86.51,6.77,193.23,6.77C299.94,6.77,386.45,93.28,386.45,200"></path>
+        <polygon points="193.23,375.65 88.83,166.85 297.63,166.85"></polygon>
+        <path class="myplay-white-st2" d="M250.56,81.68c0,31.67-25.67,57.33-57.33,57.33s-57.34-25.67-57.34-57.33c0-31.67,25.67-57.33,57.34-57.33 S250.56,50.02,250.56,81.68"></path>
+        <path d="M250.56,81.68c0,31.67-25.67,57.33-57.33,57.33s-57.34-25.67-57.34-57.33c0-31.67,25.67-57.33,57.34-57.33 S250.56,50.02,250.56,81.68"></path>
+    </g>
+</svg>

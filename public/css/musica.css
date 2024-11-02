@@ -1,0 +1,55 @@
+.rtlnav3 {
+    background-color: #302e30;
+}
+.rtlnav3:hover {
+    background-color: gray;
+}
+.rtlnavM:hover {
+    background-color: red;
+}
+.rtlnavM {
+    background-color: red;
+}
+article {
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+#galleria {
+    display: flex;
+    flex-wrap: wrap;
+}
+#galleria .elemento {
+    margin: 10px;
+    border: 1px solid slategray;
+    padding: 5px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#galleria .elemento a {
+    cursor: pointer;
+    color: yellow;
+}
+#galleria .elemento .blue {
+    color: blue;
+}
+article button {
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+@media (max-width: 500px) {
+    article {
+        margin-top: 90px;
+    }
+}

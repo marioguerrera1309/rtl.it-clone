@@ -1,0 +1,249 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+section h1 {
+    color: white;
+    font-weight: 1000;
+}
+section img {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 80%;
+    height: auto;
+    background-color: #302e30;
+}
+#titolo {
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+article div h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 1500;
+    color: white;
+    margin-bottom: 30px;
+}
+.form {
+    width: 450px;
+    color: white;
+    border: 0px;
+}
+.form input {
+    width: 450px;
+    height: 40px;
+    border: 0px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+.form input[type="date"] {
+    color: white;
+}
+.form fieldset {
+    width: 500px;
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.form div input {
+    position: relative;
+    bottom: 30px;
+}
+.telefono {
+    width: 450px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    border: 0px;
+}
+.telefono div {
+    width: 100%;
+}
+.telefono div input {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(60, 60, 60);
+    border: 0px;
+    color: white;
+}
+#prex {
+    width: 100px;
+    height: auto;
+}
+select {
+    width: 50px;
+    height: 40px;
+    border-radius: 0px;
+    border: 0px;
+    background-color: #302e30;
+    color: white;
+}
+#nazione {
+    width: 100%;
+}
+.psw {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+}
+.psw div {
+    width: 100%;
+    display: flex;
+}
+.psw input {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(60, 60, 60);
+    border: 0px;
+    color: white;
+}
+.psw button {
+    width: 100px;
+    height: 40px;
+    background-color: #302e30;
+    color: white;
+    border: 0px;
+    margin-left: 10px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    margin-top: 20px;
+}
+.green {
+    color: green;
+}
+.red {
+    color: red;
+}
+.newsletter {
+    width: 450px;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.newsletter span {
+    margin: 10px;
+}
+.newsletter div {
+    margin: 0 0 10px 10px;
+    color: white;
+}
+.testo {
+    width: 450px;
+    height: 100px;
+}
+.testo textarea {
+    width: 450px;
+    height: 100px;
+    background-color: black;
+    border: 0px;
+    color: white;
+}
+input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    font-weight: 1000;
+}
+#er1 p{
+    color: rgb(255, 87, 87);
+    font-size: 20px;
+}
+.er2 {
+    color: rgb(255, 87, 87);
+    font-size: 20px;
+    display: none;
+}
+.error {
+    display: block;
+}
+#img {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#img span {
+    color: white;
+    font-size: 20px;
+}
+#img input {
+    width: 50%;
+    height: 40px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    border: 50% solid #ccc;
+}
+@media (max-width: 500px) {
+    form {
+        width: 100px;
+    }
+    .form input {
+        width: 100px;
+    }
+    .telefono {
+        flex-direction: column;
+    }
+    .telefono div input {
+        width: 100px;
+    }
+    #nazione {
+        width: 100px;
+    }
+    .psw div {
+        flex-direction: column;
+    }
+    .newsletter {
+        width: 100px;
+    }   
+    .testo textarea {
+        width: 100px;
+        height: 100px;
+    }
+    input[type="submit"] {
+        width: 100px;
+    }
+    .form {
+        width: 100px;
+        font-size: 10px;
+    }
+    .form div input {
+        bottom: 0px;
+    }
+}

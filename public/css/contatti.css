@@ -1,0 +1,75 @@
+.title h2 {
+    font-size: 2.5em;
+    font-weight: 1000;
+}
+article section {
+    background-color: #302e30;
+    text-align: left;
+}
+.title {
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+.contatti {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contatti div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    margin-top: 0;
+    background-color:#302e30;
+}
+h3 {
+    font-size: 1em;
+}
+.contatti div form{
+    width: 100%;
+}
+.contatti div form div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+}
+.contatti div form div div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+select {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    background-color: #302e30;
+    border: 1px solid gray;
+    color: white;
+}
+.contatti div form div div input {
+    width: 100%;
+    background-color: #302e30;
+    border: 1px solid gray;
+    height: 30px;
+    margin: 10px;
+    color: white;
+}
+input {
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    color: white;
+    background-color: #302e30;
+    border:1px solid gray;
+}
+input[type="submit"] {
+    background-color: red;
+    font-weight: 900;
+    cursor: pointer;
+}
